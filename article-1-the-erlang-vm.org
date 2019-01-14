@@ -1,6 +1,6 @@
 #+TITLE: La machine virtuelle Erlang
 
-Initié par Ericsson dans la fin des années 80 et rendue open-source en 1998, la machine virtuelle Erlang (aussi appelée la BEAM pour « Bogdan's Erlang Abstract Machine ») avait pour but initial de répondre aux problématiques du monde des télécommunications. Utilisée aujourd'hui par des services tels que WhatsApp, Discord ou encore Pinterest, la BEAM semble pourtant être une technologie méconnue. Cet article essaie de présenter de manière concise les intérêts de cette machine virtuelle.
+Initiée par Ericsson dans la fin des années 80 et rendue open-source en 1998, la machine virtuelle Erlang (aussi appelée la BEAM pour « Bogdan's Erlang Abstract Machine ») avait pour but initial de répondre aux problématiques du monde des télécommunications. Utilisée aujourd'hui par des services tels que WhatsApp, Discord ou encore Pinterest, la BEAM semble pourtant être une technologie méconnue. Cet article essaie de présenter de manière concise les intérêts de cette machine virtuelle.
 
 * Les concepts derrière la BEAM
 

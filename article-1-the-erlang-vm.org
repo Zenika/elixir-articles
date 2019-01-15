@@ -37,14 +37,14 @@ De ce fait, un programme tournant sur la BEAM utilise tous les cœurs des proces
 #+CAPTION: BEAM et processeur multi-cæurs (source : https://smyck.net/2012/04/22/why-erlang/)
 [[./images/beam-concurrency.jpg]]
 
-Plusieurs BEAM sont capables de s'interconnecter pour travailler ensemble. Ainsi, les messages transitent via le réseau de manière transparente pour le code ; c'est-à-dire qu'il n'est pas nécessaire d'adapter vos programmes pour adopter ce comportement. Si cela nous donne la possibilité de "scaling" en rajoutant une machine dans notre cluster, il est aussi important de noter que les pannes d'une machine physique ne rendent pas indisponibles notre application si une autre machine est opérationnelle pour prendre le relai.
+Plusieurs BEAM sont capables de s'interconnecter pour travailler ensemble. Ainsi, les messages transitent via le réseau de manière transparente pour le code ; c'est-à-dire qu'il n'est pas nécessaire d'adapter vos programmes pour adopter ce comportement. Si cela nous donne la possibilité de « scaling » en rajoutant une machine dans notre cluster, il est aussi important de noter que les pannes d'une machine physique ne rendent pas indisponibles notre application si une autre machine est opérationnelle pour prendre le relai.
 
 #+CAPTION: Cluster de machines
 [[./images/cluster.jpg]]
 
 * Une alternative à l'approche « microservices »
 
-Le découpage en processus permet donc de mieux utiliser les ressources à votre disposition. De plus, il n'est pas nécessaire d'aborder la complexité de l'approche microservices pour commencer à développer votre première application sur la BEAM. L'approche monolithique est suffisante pour profiter du "scaling". Encore aujourd'hui, il est risqué de lancer une nouvelle application avec une approche microservices, son développement étant plus coûteux, sans avoir confirmation de son intérêt et/ou de sa rentabilité. C'est ce qu'explique Martin Folwer dans [[https://martinfowler.com/bliki/MonolithFirst.html][son article « Monolith First »]].
+Le découpage en processus permet donc de mieux utiliser les ressources à votre disposition. De plus, il n'est pas nécessaire d'aborder la complexité de l'approche microservices pour commencer à développer votre première application sur la BEAM. L'approche monolithique est suffisante pour profiter du « scaling ». Encore aujourd'hui, il est risqué de lancer une nouvelle application avec une approche microservices, son développement étant plus coûteux, sans avoir confirmation de son intérêt et/ou de sa rentabilité. C'est ce qu'explique Martin Folwer dans [[https://martinfowler.com/bliki/MonolithFirst.html][son article « Monolith First »]].
 
 #+CAPTION: Monolith vs microservices, lequel choisir ? (auteur : Martin Folwer)
 [[./images/monolith-vs-microservices-productivity.png]]
@@ -58,6 +58,6 @@ Ceci dit, le désavantage évident de l'approche de la BEAM, si on la compare à
 
 * Conclusion
 
-La BEAM implémente le modèle "acteurs" qui permet une forte concurrence et une tolérence à la faute logique et à la panne physique. Découper la logique en plusieurs processus est un pli à prendre avec la BEAM mais cela permet d'éviter beaucoup de complexité technique. En effet, nous ne sommes pas obligés de prendre en compte les découpages nécessaires pour monter à l'échelle dans une architecture de microservices plus traditionnelle. L'approche proposé par la BEAM permet de développer une solution qui est un juste milieu entre une architecture monolithique et une architecture « microservices ».
+La BEAM implémente le modèle acteurs qui permet une forte concurrence et une tolérence à la faute logique et à la panne physique. Découper la logique en plusieurs processus est un pli à prendre avec la BEAM mais cela permet d'éviter beaucoup de complexité technique. En effet, nous ne sommes pas obligés de prendre en compte les découpages nécessaires pour monter à l'échelle dans une architecture de microservices plus traditionnelle. L'approche proposé par la BEAM permet de développer une solution qui est un juste milieu entre une architecture monolithique et une architecture « microservices ».
 
 Vous ayant introduit la BEAM, nous continurons dans un prochain article sur le langage Elixir qui tire parti des qualités de cette curieuse machine virtuelle.

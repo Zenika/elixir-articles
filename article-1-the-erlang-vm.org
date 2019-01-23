@@ -56,7 +56,7 @@ De plus, différentes applications exécutées sur la BEAM (ou un cluster de BEA
 
 Ceci dit, le désavantage évident de l'approche de la BEAM, si on la compare à l'approche microservices, est qu'elle ne permet pas de développer des services dans le langage de votre choix. Si aujourd'hui on compte deux langages (Erlang et Elixir) ayant pour cible de compilation du bytecode BEAM, la communication avec des services externes doit se faire à l'aide de systèmes tiers (par exemple avec un message broker).
 
-* Conclusion
+* En résumé
 
 La BEAM implémente le modèle acteurs qui permet une forte concurrence et une tolérence à la faute logique et à la panne physique. Découper la logique en plusieurs processus est un pli à prendre avec la BEAM mais cela permet d'éviter beaucoup de complexité technique. En effet, nous ne sommes pas obligés de prendre en compte les découpages nécessaires pour monter à l'échelle dans une architecture de microservices plus traditionnelle. L'approche proposé par la BEAM permet de développer une solution qui est un juste milieu entre une architecture monolithique et une architecture « microservices ».
 
